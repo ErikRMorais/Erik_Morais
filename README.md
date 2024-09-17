@@ -1,7 +1,7 @@
-# REPOSITORIO ENG. SE SW.
+# REPOSITORIO ENGENHARIA DE SOFTWARE
 
 
-- [REPOSITORIO ENG. SE SW.](#repositorio-eng-se-sw)
+- [REPOSITORIO ENGENHARIA DE SOFTWARE](#repositorio-engenharia-de-software)
 - [1. Introdução](#1-introdução)
 - [2. Problema e descrição do negócio.](#2-problema-e-descrição-do-negócio)
 - [3. Visão geral do sistema](#3-visão-geral-do-sistema)
@@ -9,15 +9,15 @@
 - [5. Diagrama de classe](#5-diagrama-de-classe)
 - [6. Casos de uso](#6-casos-de-uso)
   - [6.1 Histórias de Usuário](#61-histórias-de-usuário)
-- [7. Diagram de componente](#7-diagram-de-componente)
+- [7. Diagrama de componente](#7-diagrama-de-componente)
 - [8. Diagrama de implantação](#8-diagrama-de-implantação)
-- [9. Prototipo de telas](#9-prototipo-de-telas)
+- [9. Protótipo de telas](#9-protótipo-de-telas)
 - [10 Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
 - [11. Pilha tecnológica](#11-pilha-tecnológica)
 - [12. Requisitos do sistema](#12-requisitos-do-sistema)
 - [13. Considerações sobre segurança](#13-considerações-sobre-segurança)
 - [14. manutenção e instalação](#14-manutenção-e-instalação)
-- [15. Glossario](#15-glossario)
+- [15. Glossário](#15-glossário)
 
 
 # 1. Introdução
@@ -25,7 +25,7 @@ O projeto a seguir apresenta um sistema desenvolvido para um pet shop. A empresa
 
 # 2. Problema e descrição do negócio.
 
-Descrição do cenario onde o sistema deverá funcionar:
+Descrição do cenário onde o sistema deverá funcionar:
 
 | ID  | Requisito                                                                                  |
 | --- | -------------------------------------------------------------------------------------------|
@@ -66,11 +66,11 @@ Descrição do cenario onde o sistema deverá funcionar:
 
 ## 6.1 Histórias de Usuário
 
-# 7. Diagram de componente  
+# 7. Diagrama de componente  
 
 # 8. Diagrama de implantação
 
-# 9. Prototipo de telas
+# 9. Protótipo de telas
 
 # 10 Diagrama de navegação de telas
 
@@ -82,7 +82,5 @@ Descrição do cenario onde o sistema deverá funcionar:
 
 # 14. manutenção e instalação
 
-# 15. Glossario
-
-
+# 15. Glossário
 
