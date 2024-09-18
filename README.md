@@ -3,7 +3,7 @@
 
 - [REPOSITORIO ENGENHARIA DE SOFTWARE](#repositorio-engenharia-de-software)
 - [1. Introdução](#1-introdução)
-- [2. Problema e descrição do negócio.](#2-problema-e-descrição-do-negócio)
+- [2. Descrição do negócio.](#2-descrição-do-negócio)
 - [3. Visão geral do sistema](#3-visão-geral-do-sistema)
 - [4. Diagrama ER](#4-diagrama-er)
 - [5. Diagrama de classe](#5-diagrama-de-classe)
@@ -21,9 +21,10 @@
 
 
 # 1. Introdução
+
 O projeto a seguir apresenta um sistema desenvolvido para um pet shop. A empresa é considerada  micro e iniciou as atividades recentemente. Ao possuir serviços exclusivos, os sistemas presentes no mercado não se enquadram, desta forma, os proprietários decidiram desenvolver uma solução própria. Esta solução é detalhada.
 
-# 2. Problema e descrição do negócio.
+# 2. Descrição do negócio.
 
 Descrição do cenário onde o sistema deverá funcionar:
 
@@ -55,10 +56,77 @@ Descrição do cenário onde o sistema deverá funcionar:
 | 24  | A clínica deve manter um histórico de atendimentos e receitas emitidas para cada animal.    |
 | 25  | Os donos devem receber lembretes de vacinação e controle de saúde periódicos para os animais.|
 
-
 # 3. Visão geral do sistema
 
+
 # 4. Diagrama ER
+
+```mermaid
+erDiagram
+    CLIENTE {
+        int id_cliente PK
+        string nome
+        string telefone
+        string endereco
+    }
+
+    ANIMAL {
+        int id_animal PK
+        string nome
+        string tipo_animal
+        string condicao_chegada
+        string tipo_racao
+        string habitos
+    }
+
+    VETERINARIO {
+        int id_veterinario PK
+        string nome
+        string especialidade
+    }
+
+    ATENDENTE {
+        int id_atendente PK
+        string nome
+    }
+
+    AGENDA {
+        int id_agenda PK
+        datetime data
+        string status
+    }
+
+    ATENDIMENTO {
+        int id_atendimento PK
+        datetime data
+        string observacoes
+        string receita
+    }
+
+    PRONTUARIO {
+        int id_prontuario PK
+        string observacoes
+        datetime data_atualizacao
+    }
+
+    EXAME {
+        int id_exame PK
+        string tipo_exame
+        datetime data_exame
+        string resultado
+    }
+
+    CLIENTE ||--o{ ANIMAL : possui
+    ANIMAL ||--o{ ATENDIMENTO : recebe
+    VETERINARIO ||--o{ ATENDIMENTO : realiza
+    ATENDENTE ||--o{ AGENDA : gerencia
+    ATENDIMENTO ||--|| PRONTUARIO : atualiza
+    ATENDIMENTO ||--o{ EXAME : solicita
+    CLIENTE ||--o{ AGENDA : agenda
+    AGENDA ||--o{ ANIMAL : atende
+    EXAME ||--|| PRONTUARIO : atualiza
+
+```
 
 # 5. Diagrama de classe
 
