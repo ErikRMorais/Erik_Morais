@@ -213,7 +213,11 @@ classDiagram
 
 # 6. Casos de uso
 
+![essa pika](https://raw.githubusercontent.com/ErikRMorais/Erik_Morais/refs/heads/main/Diagrama.drawio.png?token=GHSAT0AAAAAACW7YFNBQT6GOXDZV5HPLRWOZXTORHA)
+
+
 ## 6.1 Histórias de Usuário
+
 ## 6.2 Histórias de usuário
 
 
