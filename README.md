@@ -9,6 +9,7 @@
 - [5. Diagrama de classe](#5-diagrama-de-classe)
 - [6. Casos de uso](#6-casos-de-uso)
   - [6.1 Histórias de Usuário](#61-histórias-de-usuário)
+  - [6.2 Histórias de usuário](#62-histórias-de-usuário)
 - [7. Diagrama de componente](#7-diagrama-de-componente)
 - [8. Diagrama de implantação](#8-diagrama-de-implantação)
 - [9. Protótipo de telas](#9-protótipo-de-telas)
@@ -213,6 +214,8 @@ classDiagram
 # 6. Casos de uso
 
 ## 6.1 Histórias de Usuário
+## 6.2 Histórias de usuário
+
 
 # 7. Diagrama de componente  
 
