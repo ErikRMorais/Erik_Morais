@@ -10,6 +10,18 @@
 - [6. Casos de uso](#6-casos-de-uso)
   - [6.1 Histórias de Usuário](#61-histórias-de-usuário)
   - [6.2 Histórias de usuário](#62-histórias-de-usuário)
+    - [História de Usuário 1: Cadastro de Cliente e Animais](#história-de-usuário-1-cadastro-de-cliente-e-animais)
+    - [História de Usuário 2: Informar Condições e Hábitos do Animal](#história-de-usuário-2-informar-condições-e-hábitos-do-animal)
+    - [História de Usuário 3: Atendimento por Múltiplos Veterinários](#história-de-usuário-3-atendimento-por-múltiplos-veterinários)
+    - [História de Usuário 4: Agendamento de Consultas Futuras](#história-de-usuário-4-agendamento-de-consultas-futuras)
+    - [História de Usuário 5: Ficha e Prontuário do Animal](#história-de-usuário-5-ficha-e-prontuário-do-animal)
+    - [História de Usuário 6: Atendimento e Fila de Espera](#história-de-usuário-6-atendimento-e-fila-de-espera)
+    - [História de Usuário 7: Entrevista e Exame do Animal](#história-de-usuário-7-entrevista-e-exame-do-animal)
+    - [História de Usuário 8: Receitar Medicamentos e Solicitar Exames](#história-de-usuário-8-receitar-medicamentos-e-solicitar-exames)
+    - [História de Usuário 9: Notificar Clientes Sobre Atualizações](#história-de-usuário-9-notificar-clientes-sobre-atualizações)
+    - [História de Usuário 10: Agendar Retorno para Acompanhamento](#história-de-usuário-10-agendar-retorno-para-acompanhamento)
+    - [História de Usuário 11: Histórico de Atendimentos e Receitas](#história-de-usuário-11-histórico-de-atendimentos-e-receitas)
+    - [História de Usuário 12: Lembretes de Vacinação e Saúde](#história-de-usuário-12-lembretes-de-vacinação-e-saúde)
 - [7. Diagrama de componente](#7-diagrama-de-componente)
 - [8. Diagrama de implantação](#8-diagrama-de-implantação)
 - [9. Protótipo de telas](#9-protótipo-de-telas)
@@ -213,13 +225,98 @@ classDiagram
 
 # 6. Casos de uso
 
-![essa pika](https://raw.githubusercontent.com/ErikRMorais/Erik_Morais/refs/heads/main/Diagrama.drawio.png?token=GHSAT0AAAAAACW7YFNBQT6GOXDZV5HPLRWOZXTORHA)
+![DiagramaCasosDeUso](https://github.com/ErikRMorais/Erik_Morais/blob/main/Diagrama.drawio.png?raw=true)
 
+<img src="https://github.com/ErikRMorais/Erik_Morais/blob/main/Diagrama.drawio.png?raw=true" alt="Texto Alternativo">
 
 ## 6.1 Histórias de Usuário
 
 ## 6.2 Histórias de usuário
+---
 
+### História de Usuário 1: Cadastro de Cliente e Animais
+**Como** um cliente da clínica veterinária,  
+**Eu quero** cadastrar tanto as minhas informações pessoais quanto as dos meus animais (gatos ou cachorros),  
+**Para que** a clínica possa me identificar e registrar os animais que trago para atendimento.
+
+---
+
+### História de Usuário 2: Informar Condições e Hábitos do Animal
+**Como** um cliente,  
+**Eu quero** informar as condições nas quais meu animal chegou à clínica, os tipos de ração que ele consome e seus hábitos,  
+**Para que** o veterinário possa ter uma visão clara do estado geral do animal antes do atendimento.
+
+---
+
+### História de Usuário 3: Atendimento por Múltiplos Veterinários
+**Como** um cliente,  
+**Eu quero** que meu animal possa ser atendido por mais de um veterinário,  
+**Para que** ele receba o cuidado necessário, mesmo quando o veterinário principal não estiver disponível.
+
+---
+
+### História de Usuário 4: Agendamento de Consultas Futuras
+**Como** um cliente,  
+**Eu quero** marcar um horário de atendimento futuro para meu animal,  
+**Para que** eu possa planejar o cuidado veterinário sem depender de disponibilidade imediata.
+
+---
+
+### História de Usuário 5: Ficha e Prontuário do Animal
+**Como** um veterinário,  
+**Eu quero** registrar cada atendimento em uma ficha com o prontuário do animal,  
+**Para que** todas as informações médicas sejam documentadas de forma organizada e acessível em futuros atendimentos.
+
+---
+
+### História de Usuário 6: Atendimento e Fila de Espera
+**Como** um atendente,  
+**Eu quero** verificar a agenda dos veterinários e, se necessário, colocar o cliente e seu animal na fila de espera,  
+**Para que** possamos otimizar o fluxo de atendimento e garantir que todos sejam atendidos de forma eficiente.
+
+---
+
+### História de Usuário 7: Entrevista e Exame do Animal
+**Como** um veterinário,  
+**Eu quero** realizar uma entrevista com o dono do animal e, em seguida, examinar o animal,  
+**Para que** eu possa anotar minhas observações no prontuário e ter uma base completa para a consulta.
+
+---
+
+### História de Usuário 8: Receitar Medicamentos e Solicitar Exames
+**Como** um veterinário,  
+**Eu quero** emitir receitas e solicitar exames complementares para o animal,  
+**Para que** o tratamento adequado seja aplicado e o estado de saúde do animal seja verificado com precisão.
+
+---
+
+### História de Usuário 9: Notificar Clientes Sobre Atualizações
+**Como** um cliente,  
+**Eu quero** ser notificado sempre que o prontuário ou a receita do meu animal for atualizado,  
+**Para que** eu fique informado sobre o progresso do tratamento ou resultados de exames.
+
+---
+
+### História de Usuário 10: Agendar Retorno para Acompanhamento
+**Como** um veterinário,  
+**Eu quero** agendar retornos para acompanhamento do tratamento dos animais,  
+**Para que** eu possa monitorar a saúde do animal e ajustar o tratamento conforme necessário.
+
+---
+
+### História de Usuário 11: Histórico de Atendimentos e Receitas
+**Como** o administrador da clínica,  
+**Eu quero** manter um histórico completo de todos os atendimentos e receitas emitidas para cada animal,  
+**Para que** possamos consultar o histórico médico em qualquer momento e garantir um atendimento contínuo.
+
+---
+
+### História de Usuário 12: Lembretes de Vacinação e Saúde
+**Como** um cliente,  
+**Eu quero** receber lembretes periódicos sobre vacinas e controle de saúde para meu animal,  
+**Para que** eu possa garantir que ele esteja sempre com a saúde em dia.
+
+---
 
 # 7. Diagrama de componente  
 
