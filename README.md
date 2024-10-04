@@ -25,6 +25,12 @@
 - [7. Diagrama de componente](#7-diagrama-de-componente)
 - [8. Diagrama de implantação](#8-diagrama-de-implantação)
 - [9. Protótipo de telas](#9-protótipo-de-telas)
+  - [9.1 Telas](#91-telas)
+    - [Login](#login)
+    - [Tela principal](#tela-principal)
+    - [Cadastro](#cadastro)
+    - [Graficos](#graficos)
+    - [Dashboard](#dashboard)
 - [10 Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
 - [11. Pilha tecnológica](#11-pilha-tecnológica)
 - [12. Requisitos do sistema](#12-requisitos-do-sistema)
@@ -323,6 +329,41 @@ classDiagram
 # 8. Diagrama de implantação
 
 # 9. Protótipo de telas
+
+## 9.1 Telas
+
+---
+
+### Login
+
+![Login](https://github.com/ErikRMorais/Erik_Morais/blob/main/login.png?raw=true)
+
+---
+
+### Tela principal
+
+![TelaPrincipal](https://github.com/ErikRMorais/Erik_Morais/blob/main/TelaPrincipal.png?raw=true)
+
+---
+
+### Cadastro
+
+![Cadastro](https://github.com/ErikRMorais/Erik_Morais/blob/main/Cadastros.png?raw=true)
+
+---
+
+### Graficos
+
+![Graficos](https://github.com/ErikRMorais/Erik_Morais/blob/main/Gaficos.png?raw=true)
+
+---
+
+### Dashboard
+
+![Dashboard](https://github.com/ErikRMorais/Erik_Morais/blob/main/Dash.png?raw=true)
+
+---
+
 
 # 10 Diagrama de navegação de telas
 
