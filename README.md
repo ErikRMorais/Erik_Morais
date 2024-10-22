@@ -326,8 +326,12 @@ classDiagram
 
 # 7. Diagrama de componente  
 
+![DiagramaDeComponente](https://github.com/ErikRMorais/Erik_Morais/blob/main/Diagramacomponentes.drawio.png?raw=true)
+
 
 # 8. Diagrama de implantação
+
+![DiagramaDeImplantação](https://github.com/ErikRMorais/Erik_Morais/blob/main/Diagramacomponentes.drawio.png?raw=true)
 
 # 9. Protótipo de telas
 
@@ -367,6 +371,10 @@ classDiagram
 
 
 # 10 Diagrama de navegação de telas
+
+
+
+# 11. Pilha tecnológica
 
 ```
 graph TB
@@ -435,8 +443,6 @@ B5 --> E4
 B5 --> E5
 
 ```
-
-# 11. Pilha tecnológica
 
 # 12. Requisitos do sistema
 
