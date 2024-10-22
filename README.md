@@ -326,6 +326,7 @@ classDiagram
 
 # 7. Diagrama de componente  
 
+
 # 8. Diagrama de implantação
 
 # 9. Protótipo de telas
@@ -366,6 +367,75 @@ classDiagram
 
 
 # 10 Diagrama de navegação de telas
+
+```mermaid
+ 
+graph TB
+
+subgraph Frontend
+    A1[React.js]
+    A2[Redux]
+    A3[Mobile App (React Native)]
+    A4[Web Interface (Next.js)]
+end
+
+subgraph Backend
+    B1[Node.js]
+    B2[Express.js]
+    B3[JWT Auth]
+    B4[REST API]
+    B5[GraphQL API]
+end
+
+subgraph Database
+    C1[MySQL/PostgreSQL]
+    C2[MongoDB]
+    C3[Redis (Caching)]
+    C4[Elasticsearch (Busca)]
+end
+
+subgraph Infraestrutura
+    D1[Nginx]
+    D2[Docker]
+    D3[Load Balancer]
+    D4[Cloud Hosting: AWS/GCP/Azure]
+    D5[Kubernetes (Orquestração)]
+end
+
+subgraph Integrações
+    E1[Payment Gateway (Stripe/PayPal)]
+    E2[SMS API (Twilio)]
+    E3[Email Service (SendGrid)]
+    E4[Pet Health API (Veterinários)]
+    E5[CRM Integration (Zoho, HubSpot)]
+end
+
+A3 --> B1
+A4 --> B4
+A1 --> B4
+A1 --> B5
+A2 --> A1
+
+B1 --> B2
+B2 --> B4
+B4 --> C1
+B4 --> C2
+B5 --> C3
+B5 --> C4
+
+B1 --> D1
+D1 --> D2
+D2 --> D3
+D3 --> D4
+D2 --> D5
+
+B4 --> E1
+B4 --> E2
+B4 --> E3
+B5 --> E4
+B5 --> E5
+
+```
 
 # 11. Pilha tecnológica
 
