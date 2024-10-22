@@ -369,7 +369,7 @@ classDiagram
 # 10 Diagrama de navegação de telas
 
 ```mermaid
- 
+
 graph TB
 
 subgraph Frontend
