@@ -24,6 +24,11 @@
     - [História de Usuário 12: Lembretes de Vacinação e Saúde](#história-de-usuário-12-lembretes-de-vacinação-e-saúde)
 - [7. Diagrama de componente](#7-diagrama-de-componente)
 - [8. Diagrama de implantação](#8-diagrama-de-implantação)
+- [9. Diagrama C4](#9-diagrama-c4)
+  - [9.1 diagrama de contexto](#91-diagrama-de-contexto)
+  - [9.2 diagrama de contêiner](#92-diagrama-de-contêiner)
+  - [9.3 diagrama de componente](#93-diagrama-de-componente)
+  - [9.4 diagrama de código](#94-diagrama-de-código)
 - [9. Protótipo de telas](#9-protótipo-de-telas)
   - [9.1 Telas](#91-telas)
     - [Login](#login)
@@ -332,6 +337,119 @@ classDiagram
 # 8. Diagrama de implantação
 
 ![DiagramaDeImplantação](https://github.com/ErikRMorais/Erik_Morais/blob/main/Diagramacomponentes.drawio.png?raw=true)
+
+# 9. Diagrama C4
+
+## 9.1 diagrama de contexto
+
+```mermaid
+graph TD
+    Cliente -- Cadastro de Animal e Informações --> Atendente
+    Cliente -- Informação e Atendimento --> Veterinário
+    Atendente -- Atualização de Agenda --> Veterinário
+    Veterinário -- Prontuário e Receita --> Cliente
+    Veterinário -- Relatório de Exames --> Cliente
+    SistemaProntuario -- Notificações e Histórico --> Cliente
+    Cliente -- Marcação de Consultas Futura --> SistemaAgenda
+    SistemaAgenda -- Atualização de Agendamentos --> Atendente
+    Atendente -- Fila de Espera --> Veterinário
+    Veterinário -- Solicitação de Exames --> Laboratório
+    Laboratório -- Resultados de Exames --> Veterinário
+
+```
+## 9.2 diagrama de contêiner
+
+```mermaid
+graph TD
+    ClienteApp[Aplicativo Cliente] --> APIBackend[API Backend]
+    AtendenteSistema[Sistema do Atendente] --> APIBackend
+    VeterinarioSistema[Sistema Veterinário] --> APIBackend
+    SistemaAgenda[Gerenciador de Agenda] --> APIBackend
+    SistemaProntuario[Gerenciador de Prontuários] --> BancoDeDados[(Banco de Dados)]
+    LaboratorioSistema[Sistema do Laboratório] --> APIBackend
+    APIBackend --> BancoDeDados
+    APIBackend --> SistemaNotificacoes[Sistema de Notificações]
+
+
+```
+
+## 9.3 diagrama de componente
+
+```mermaid
+graph TD
+    APIBackend --> MóduloCadastro[Modulo de Cadastro de Cliente e Animal]
+    APIBackend --> MóduloAgenda[Modulo de Gerenciamento de Agenda]
+    APIBackend --> MóduloProntuário[Modulo de Prontuário e Histórico]
+    APIBackend --> MóduloNotificação[Modulo de Notificações]
+    APIBackend --> MóduloReceitas[Modulo de Emissão de Receitas]
+    MóduloProntuário --> BancoDeDados[(Banco de Dados)]
+    MóduloAgenda --> BancoDeDados
+    MóduloNotificação --> SistemaNotificacoes[Sistema de Notificações]
+    MóduloReceitas --> BancoDeDados
+    MóduloAgenda --> MóduloFilaEspera[Modulo de Gerenciamento de Fila de Espera]
+
+
+```
+
+## 9.4 diagrama de código
+
+```mermaid
+classDiagram
+    class Cliente {
+        +String nome
+        +String contato
+        +registrarAnimal()
+        +informarCondicoes()
+        +marcarConsulta()
+    }
+
+    class Animal {
+        +String nome
+        +String tipo
+        +String raca
+        +String habitos
+        +registrarInformacoes()
+    }
+
+    class Veterinario {
+        +String nome
+        +exame()
+        +entrevista()
+        +solicitarExames()
+        +emitirReceita()
+    }
+
+    class Atendente {
+        +String nome
+        +verificarAgenda()
+        +incluirFilaEspera()
+        +acompanharCliente()
+    }
+
+    class Agenda {
+        +String data
+        +String horario
+        +consultarDisponibilidade()
+        +marcarConsulta()
+    }
+
+    class Prontuario {
+        +String observacoes
+        +List exames
+        +atualizarProntuario()
+        +adicionarReceita()
+    }
+
+    Cliente --> Animal
+    Cliente --> Atendente
+    Atendente --> Veterinario
+    Veterinario --> Prontuario
+    Veterinario --> Agenda
+    Veterinario --> Receita
+    Prontuario --> Cliente
+
+
+```
 
 # 9. Protótipo de telas
 
