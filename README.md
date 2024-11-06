@@ -4,6 +4,8 @@
 - [REPOSITORIO ENGENHARIA DE SOFTWARE](#repositorio-engenharia-de-software)
 - [1. Introdução](#1-introdução)
 - [2. Descrição do negócio.](#2-descrição-do-negócio)
+  - [2.1 Requisitos](#21-requisitos)
+    - [Requisitos funcionais e não funcionais](#requisitos-funcionais-e-não-funcionais)
 - [3. Visão geral do sistema](#3-visão-geral-do-sistema)
 - [4. Diagrama ER](#4-diagrama-er)
 - [5. Diagrama de classe](#5-diagrama-de-classe)
@@ -82,6 +84,52 @@ Descrição do cenário onde o sistema deverá funcionar:
 | 23  | Caso necessário, o veterinário pode agendar retornos para acompanhamento do tratamento.     |
 | 24  | A clínica deve manter um histórico de atendimentos e receitas emitidas para cada animal.    |
 | 25  | Os donos devem receber lembretes de vacinação e controle de saúde periódicos para os animais.|
+
+## 2.1 Requisitos
+
+### Requisitos funcionais e não funcionais
+
+| **Requisitos Funcionais** | **Descrição** |
+|----------------------------|------------------------------------------------------------|
+| RF01 | A clínica deve atender apenas gatos e cachorros. |
+| RF02 | Os clientes devem poder fazer o cadastro de si e dos animais. |
+| RF03 | Os clientes devem informar as condições de chegada dos animais. |
+| RF04 | Os clientes devem informar o tipo de ração que o animal consome. |
+| RF05 | Os clientes devem informar os hábitos dos animais. |
+| RF06 | Mais de um veterinário pode atender o mesmo animal. |
+| RF07 | Os animais devem ser atendidos de acordo com uma agenda diária. |
+| RF08 | Cada animal atendido deve receber uma ficha e um prontuário. |
+| RF09 | Os donos podem marcar horários de atendimento futuro. |
+| RF10 | O atendimento deve gerar uma receita para o animal. |
+| RF11 | O cliente deve ser atendido por um atendente ao chegar na clínica. |
+| RF12 | O atendente deve verificar a disponibilidade de agenda com o veterinário. |
+| RF13 | O atendente deve colocar o cliente e seu animal na fila de espera, se necessário. |
+| RF14 | O atendente deve levar o cliente e o animal ao veterinário. |
+| RF15 | O veterinário deve realizar uma entrevista com o dono do animal. |
+| RF16 | O resultado da entrevista deve ser registrado em um formulário. |
+| RF17 | O veterinário deve examinar o animal e anotar as observações no prontuário. |
+| RF18 | O animal deve receber uma receita, dependendo da situação. |
+| RF19 | O veterinário pode solicitar exames complementares. |
+| RF20 | O cliente deve ser informado sobre o prazo de entrega dos exames. |
+| RF21 | O prontuário do animal deve ser atualizado com os resultados dos exames. |
+| RF22 | O cliente deve ser notificado sobre atualizações no prontuário ou receita. |
+| RF23 | O veterinário pode agendar retornos para acompanhamento do tratamento. |
+| RF24 | A clínica deve manter um histórico de atendimentos e receitas para cada animal. |
+| RF25 | Os donos devem receber lembretes de vacinação e controle de saúde. |
+
+| **Requisitos Não Funcionais** | **Descrição** |
+|--------------------------------|------------------------------------------------------------|
+| RNF01 | O sistema deve garantir a segurança dos dados dos clientes e dos animais. |
+| RNF02 | O sistema deve ser acessível por meio de dispositivos móveis e desktops. |
+| RNF03 | A interface deve ser intuitiva e de fácil uso para clientes e funcionários. |
+| RNF04 | O tempo de resposta para consultas de dados deve ser inferior a 2 segundos. |
+| RNF05 | O sistema deve suportar múltiplos usuários simultâneos. |
+| RNF06 | As notificações aos clientes devem ser enviadas por e-mail ou SMS. |
+| RNF07 | O sistema deve estar disponível 24/7 com 99,9% de uptime. |
+| RNF08 | Os dados devem ser armazenados de forma a garantir a integridade e backup diário. |
+| RNF09 | O sistema deve estar em conformidade com a legislação de proteção de dados. |
+| RNF10 | O sistema deve permitir escalabilidade para suportar o crescimento da clínica. |
+
 
 # 3. Visão geral do sistema
 
