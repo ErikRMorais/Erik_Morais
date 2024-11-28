@@ -7,11 +7,15 @@
   - [2.1 Requisitos](#21-requisitos)
     - [Requisitos funcionais e não funcionais](#requisitos-funcionais-e-não-funcionais)
 - [3. Visão geral do sistema](#3-visão-geral-do-sistema)
+  - [3.1 Arquitetura](#31-arquitetura)
+  - [3.2 Funcionalidades Principais](#32-funcionalidades-principais)
+  - [3.3 Tecnologias Utilizadas](#33-tecnologias-utilizadas)
+  - [3.4 Integrações](#34-integrações)
+  - [3.5 Segurança](#35-segurança)
 - [4. Diagrama ER](#4-diagrama-er)
 - [5. Diagrama de classe](#5-diagrama-de-classe)
 - [6. Casos de uso](#6-casos-de-uso)
   - [6.1 Histórias de Usuário](#61-histórias-de-usuário)
-  - [6.2 Histórias de usuário](#62-histórias-de-usuário)
     - [História de Usuário 1: Cadastro de Cliente e Animais](#história-de-usuário-1-cadastro-de-cliente-e-animais)
     - [História de Usuário 2: Informar Condições e Hábitos do Animal](#história-de-usuário-2-informar-condições-e-hábitos-do-animal)
     - [História de Usuário 3: Atendimento por Múltiplos Veterinários](#história-de-usuário-3-atendimento-por-múltiplos-veterinários)
@@ -31,22 +35,15 @@
   - [9.2 diagrama de contêiner](#92-diagrama-de-contêiner)
   - [9.3 diagrama de componente](#93-diagrama-de-componente)
   - [9.4 diagrama de código](#94-diagrama-de-código)
-- [9. Protótipo de telas](#9-protótipo-de-telas)
-  - [9.1 Telas](#91-telas)
+- [10. Protótipo de telas](#10-protótipo-de-telas)
+  - [10.1 Telas](#101-telas)
     - [Login](#login)
     - [Tela principal](#tela-principal)
     - [Cadastro](#cadastro)
     - [Graficos](#graficos)
     - [Dashboard](#dashboard)
-- [10 Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
-- [11. Pilha tecnológica](#11-pilha-tecnológica)
-- [12. Requisitos do sistema](#12-requisitos-do-sistema)
-- [13. Considerações sobre segurança](#13-considerações-sobre-segurança)
-- [14. manutenção e instalação](#14-manutenção-e-instalação)
-- [15. Glossário](#15-glossário)
-- [16. Script SQL](#16-script-sql)
-  - [16.1 Comando create data base](#161-comando-create-data-base)
-  - [16.2 Comando INSERT](#162-comando-insert)
+- [11. Diagrama de Navegação de Telas](#11-diagrama-de-navegação-de-telas)
+  - [17.2 Comando INSERT](#172-comando-insert)
 
 
 # 1. Introdução
@@ -132,6 +129,50 @@ Descrição do cenário onde o sistema deverá funcionar:
 
 
 # 3. Visão geral do sistema
+
+O sistema é composto por diversos módulos interconectados que colaboram para fornecer uma experiência integrada ao usuário. A seguir, apresentamos os principais componentes:
+
+## 3.1 Arquitetura
+
+A arquitetura do sistema é baseada em uma estrutura modular, permitindo escalabilidade e manutenção simplificada. Os principais módulos incluem:
+
+- **Frontend**: Interface do usuário desenvolvida com tecnologias web modernas, proporcionando uma experiência interativa e responsiva.
+- **Backend**: Servidor responsável pelo processamento de lógica de negócios e gerenciamento de dados, implementado em uma linguagem de programação robusta.
+- **Banco de Dados**: Sistema de gerenciamento de banco de dados relacional que armazena informações essenciais de forma estruturada.
+
+## 3.2 Funcionalidades Principais
+
+O sistema oferece as seguintes funcionalidades:
+
+- **Autenticação de Usuários**: Permite que os usuários se registrem e façam login de forma segura.
+- **Gerenciamento de Conteúdo**: Ferramentas para criação, edição e exclusão de conteúdo, facilitando a administração de informações.
+- **Relatórios e Análises**: Geração de relatórios detalhados e análises de dados para auxiliar na tomada de decisões.
+
+## 3.3 Tecnologias Utilizadas
+
+As principais tecnologias empregadas no desenvolvimento do sistema são:
+
+- **Linguagens de Programação**: Utilização de linguagens como JavaScript para o frontend e Python para o backend.
+- **Frameworks**: Implementação de frameworks como React para o frontend e Django para o backend, acelerando o desenvolvimento.
+- **Banco de Dados**: Uso do PostgreSQL como sistema de gerenciamento de banco de dados, garantindo confiabilidade e desempenho.
+
+## 3.4 Integrações
+
+O sistema integra-se com diversas APIs e serviços externos para ampliar suas funcionalidades, incluindo:
+
+- **Serviços de Pagamento**: Integração com gateways de pagamento para processar transações financeiras.
+- **Redes Sociais**: Conexão com plataformas de redes sociais para compartilhamento e autenticação.
+- **Serviços de E-mail**: Utilização de serviços de e-mail para notificações e comunicação com os usuários.
+
+## 3.5 Segurança
+
+Medidas de segurança implementadas no sistema:
+
+- **Criptografia de Dados**: Proteção de dados sensíveis por meio de criptografia avançada.
+- **Controle de Acesso**: Definição de permissões e níveis de acesso para diferentes tipos de usuários.
+- **Monitoramento**: Implementação de ferramentas de monitoramento para detectar e responder a atividades suspeitas.
+
+
 
 
 # 4. Diagrama ER
@@ -289,8 +330,6 @@ classDiagram
 <img src="https://github.com/ErikRMorais/Erik_Morais/blob/main/Diagrama.drawio.png?raw=true" alt="Texto Alternativo">
 
 ## 6.1 Histórias de Usuário
-
-## 6.2 Histórias de usuário
 ---
 
 ### História de Usuário 1: Cadastro de Cliente e Animais
@@ -499,9 +538,9 @@ classDiagram
 
 ```
 
-# 9. Protótipo de telas
+# 10. Protótipo de telas
 
-## 9.1 Telas
+## 10.1 Telas
 
 ---
 
@@ -536,11 +575,37 @@ classDiagram
 ---
 
 
-# 10 Diagrama de navegação de telas
+# 11. Diagrama de Navegação de Telas
+
+Abaixo está o diagrama de navegação das telas do sistema, representando o fluxo entre as diferentes interfaces:
+
+```mermaid
+graph TD
+    Login["Tela de Login"] --> Dashboard["Tela Principal"]
+    Dashboard --> CadastroCliente["Tela de Cadastro de Cliente"]
+    Dashboard --> CadastroAnimal["Tela de Cadastro de Animal"]
+    Dashboard --> Agenda["Tela de Agendamentos"]
+    Dashboard --> Atendimento["Tela de Atendimento"]
+    Dashboard --> Prontuario["Tela de Prontuário"]
+    Dashboard --> Receitas["Tela de Receitas"]
+    Dashboard --> Relatorios["Tela de Relatórios"]
+    
+    CadastroCliente --> Dashboard
+    CadastroAnimal --> Dashboard
+    Agenda --> CadastroAgenda["Tela de Criação de Agendamento"]
+    CadastroAgenda --> Agenda
+    Atendimento --> Exames["Tela de Solicitação de Exames"]
+    Atendimento --> Receitas
+    Prontuario --> AtualizarProntuario["Tela de Atualização de Prontuário"]
+    AtualizarProntuario --> Prontuario
+    
+    Receitas --> Dashboard
+    Relatorios --> Dashboard
 
 
 
-# 11. Pilha tecnológica
+
+# 12. Pilha tecnológica
 
 ```
 graph TB
@@ -610,17 +675,119 @@ B5 --> E5
 
 ```
 
-# 12. Requisitos do sistema
+# 13. Requisitos do Sistema
 
-# 13. Considerações sobre segurança
+O sistema desenvolvido para a clínica veterinária deve atender aos seguintes requisitos técnicos:
 
-# 14. manutenção e instalação
+## 13.1 Requisitos de Hardware
+- Servidor com:
+  - Processador: Intel Xeon ou superior.
+  - Memória RAM: 16 GB ou mais.
+  - Armazenamento: 500 GB SSD ou superior.
+  - Conexão de Rede: 1 Gbps.
 
-# 15. Glossário
+- Estações de trabalho para funcionários:
+  - Processador: Intel i5 ou equivalente.
+  - Memória RAM: 8 GB ou mais.
+  - Armazenamento: 256 GB SSD.
+  - Resolução de Tela: Full HD (1920x1080).
 
-# 16. Script SQL
+## 13.2 Requisitos de Software
+- **Sistema Operacional:** 
+  - Servidor: Linux (Ubuntu Server 20.04 LTS ou superior).
+  - Estações de trabalho: Windows 10 ou superior / Ubuntu Desktop.
 
-## 16.1 Comando create data base
+- **Softwares necessários:**
+  - Banco de dados: PostgreSQL 13 ou superior.
+  - Backend: Node.js 16 ou superior.
+  - Frontend: React 17 ou superior.
+  - Navegadores compatíveis: Google Chrome, Mozilla Firefox.
+
+- **Dependências:**
+  - Docker e Docker Compose para containerização.
+  - Serviços de backup automatizado.
+
+---
+
+# 14. Considerações sobre Segurança
+
+A segurança do sistema foi priorizada com as seguintes medidas:
+
+## 14.1 Criptografia
+- Dados sensíveis (senhas, informações médicas) são armazenados com algoritmos de hash como **bcrypt**.
+- Comunicação segura entre cliente e servidor via **HTTPS** com certificados SSL.
+
+## 14.2 Controle de Acesso
+- Autenticação por meio de **JWT (JSON Web Tokens)**.
+- Níveis de permissão:
+  - Administradores.
+  - Veterinários.
+  - Atendentes.
+  - Clientes.
+
+## 14.3 Backup e Recuperação
+- Backups diários automatizados dos bancos de dados.
+- Armazenamento redundante em servidores externos para recuperação de desastres.
+
+## 14.4 Conformidade com LGPD
+- Coleta de consentimento explícito para armazenamento de dados pessoais.
+- Registro e auditoria de acessos aos dados.
+
+## 14.5 Monitoramento e Resposta
+- Logs centralizados para auditoria e análise de segurança.
+- Ferramentas de detecção de intrusão (IDS) ativas.
+
+---
+
+# 15. Manutenção e Instalação
+
+## 15.1 Processo de Instalação
+1. **Configuração do Servidor:**
+   - Instale o sistema operacional Linux.
+   - Configure o ambiente com Docker e Docker Compose.
+   
+2. **Implementação do Sistema:**
+   - Clone o repositório do projeto.
+   - Configure variáveis de ambiente (ex.: conexões de banco de dados).
+   - Execute o `docker-compose up` para iniciar os contêineres.
+
+3. **Configuração Inicial:**
+   - Crie os usuários iniciais (admin, veterinários, atendentes).
+   - Configure as notificações (e-mail/SMS).
+
+## 15.2 Manutenção
+- **Atualizações:** 
+  - Verifique semanalmente por atualizações do sistema no repositório.
+  - Realize atualizações em ambiente de homologação antes de aplicar em produção.
+
+- **Monitoramento:**
+  - Utilize ferramentas como **Prometheus** e **Grafana** para monitorar desempenho.
+  - Configure alertas para identificar falhas no sistema.
+
+- **Limpeza de Dados:**
+  - Realize auditorias trimestrais nos bancos de dados para remover registros desnecessários.
+
+---
+
+# 16. Glossário
+
+- **Animal:** Refere-se aos pacientes (gatos e cachorros) atendidos pela clínica.
+- **Cliente:** Proprietário de um ou mais animais, responsável pelo cadastro e informações.
+- **Veterinário:** Profissional responsável pelos atendimentos clínicos e diagnósticos.
+- **Atendente:** Funcionário que organiza agendamentos e auxilia no fluxo de atendimento.
+- **Prontuário:** Registro médico contendo histórico, receitas e resultados de exames.
+- **Receita:** Documento emitido pelo veterinário com a prescrição de medicamentos ou tratamentos.
+- **Agenda:** Sistema de gerenciamento de horários e consultas na clínica.
+- **LGPD:** Lei Geral de Proteção de Dados, legislação brasileira que regula o uso de dados pessoais.
+- **JWT:** JSON Web Token, tecnologia usada para autenticação segura em sistemas web.
+- **Backup:** Cópia de segurança dos dados armazenados no sistema.
+- **Docker:** Plataforma para containerização de aplicações, permitindo maior eficiência e portabilidade.
+- **HTTPS:** Protocolo para comunicação segura na internet, protegendo os dados transmitidos.
+
+
+# 17. Script SQL
+
+## 17.1 Comando create data base
 
 ```SQL
 -- Tabela de Clientes
@@ -734,7 +901,7 @@ CREATE TABLE FormularioEntrevista (
 ```
 
 
-## 16.2 Comando INSERT 
+## 17.2 Comando INSERT 
 
 ```SQL
 -- Inserindo dados na tabela Cliente
