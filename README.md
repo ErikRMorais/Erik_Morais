@@ -43,6 +43,22 @@
     - [Graficos](#graficos)
     - [Dashboard](#dashboard)
 - [11. Diagrama de Navegação de Telas](#11-diagrama-de-navegação-de-telas)
+- [12. Pilha tecnológica](#12-pilha-tecnológica)
+- [13. Requisitos do Sistema](#13-requisitos-do-sistema)
+  - [13.1 Requisitos de Hardware](#131-requisitos-de-hardware)
+  - [13.2 Requisitos de Software](#132-requisitos-de-software)
+- [14. Considerações sobre Segurança](#14-considerações-sobre-segurança)
+  - [14.1 Criptografia](#141-criptografia)
+  - [14.2 Controle de Acesso](#142-controle-de-acesso)
+  - [14.3 Backup e Recuperação](#143-backup-e-recuperação)
+  - [14.4 Conformidade com LGPD](#144-conformidade-com-lgpd)
+  - [14.5 Monitoramento e Resposta](#145-monitoramento-e-resposta)
+- [15. Manutenção e Instalação](#15-manutenção-e-instalação)
+  - [15.1 Processo de Instalação](#151-processo-de-instalação)
+  - [15.2 Manutenção](#152-manutenção)
+- [16. Glossário](#16-glossário)
+- [17. Script SQL](#17-script-sql)
+  - [17.1 Comando create data base](#171-comando-create-data-base)
   - [17.2 Comando INSERT](#172-comando-insert)
 
 
@@ -602,8 +618,7 @@ graph TD
     Receitas --> Dashboard
     Relatorios --> Dashboard
 
-
-
+```
 
 # 12. Pilha tecnológica
 
